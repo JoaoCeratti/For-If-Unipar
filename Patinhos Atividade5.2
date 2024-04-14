@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scr =  new Scanner(System.in);
+        System.out.println("quantos patinhos foram passear?");
+        int x = scr.nextInt();
+        for(int i = 1 ; i <= x ; i++){
+            System.out.println(x + " patinhos foram passear");
+            System.out.println("Além das montanhas");
+            System.out.println("Para brincar");
+            System.out.println("A mamãe gritou:");
+            System.out.println("Quá, Quá, Quá, Quá");
+            if((x-i) == 0) {
+                System.out.println("mas nenhum patinho voltou de la");
+            }else{
+                System.out.println("mas só " + (x - i) + " patinhos voltaram de lá...");
+            }
+        }
+        System.out.println("A mamãe patinho");
+        System.out.println("foi procurar");
+        System.out.println("Além das montanhas");
+        System.out.println("Na beira do mar");
+        System.out.println("A mamãe gritou:");
+        System.out.println("Quá, Quá, Quá, Quá");
+        System.out.println("E os " + x + " patinhos");
+        System.out.println("voltaram de lá");
+    }
+}
