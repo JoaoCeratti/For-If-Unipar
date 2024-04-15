@@ -1,0 +1,39 @@
+package br.unipar;
+
+public class ContaBancaria {
+
+    private double Saldo;
+    private String NumeroConta;
+
+    public void depositar(double valor) {
+        this.Saldo += valor;
+    }
+
+    public void sacar(double valor) {
+        if (Saldo >= valor) {
+            this.Saldo -= valor;
+        } else {
+            System.out.println("Saldo insuficiente");
+        }
+    }
+
+    public void consultarSaldo() {
+        System.out.println("Saldo: " + this.Saldo);
+    }
+}
+
+
+package br.unipar;
+
+public class Main {
+    public static void main(String[] args) {
+
+    ContaBancaria conta = new ContaBancaria();
+
+    conta.depositar(354.50);
+    conta.consultarSaldo();
+    conta.sacar(124.65);
+    conta.consultarSaldo();
+
+    }
+}
