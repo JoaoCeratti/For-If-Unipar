@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        int [] x = new int[20];
+        Scanner scr = new Scanner(System.in);
+
+        for (int i = 0; i < 20; i++) {
+            System.out.println("Digite um numero:");
+             x[i] = scr.nextInt();
+
+        }
+        System.out.println("numero menores que 100:");
+        for (int i = 0; i < 20; i++) {
+            if (x[i] < 100) {
+                System.out.println(x[i]);
+            }
+        }
+        System.out.println("numeros entre 101 e 200");
+        for (int i = 0; i < 20; i++) {
+            if (x[i] > 101 && x[i] < 200) {
+                System.out.println(x[i]);
+            }
+        }
+        System.out.println("numeros maiores que 201");
+        for (int i = 0; i < 20; i++) {
+            if (x[i] > 201) {
+                System.out.println(x[i]);
+            }
+        }
+    }
+}
